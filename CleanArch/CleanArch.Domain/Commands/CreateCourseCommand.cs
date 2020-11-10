@@ -10,7 +10,7 @@ namespace CleanArch.Domain.Commands
         {
             Name = name;
             Description = description;
-            ImageUrl = ImageUrl;
+            ImageUrl = imageUrl;
         }
     }
 }
