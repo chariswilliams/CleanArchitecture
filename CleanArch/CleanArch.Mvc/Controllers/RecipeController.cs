@@ -10,18 +10,18 @@ using Microsoft.AspNetCore.Mvc;
 namespace CleanArch.Mvc.Controllers
 {
     [Authorize]
-    public class CourseController : Controller
+    public class RecipeController : Controller
     {
-        private ICourseService _courseService;
+        private IRecipeService _recipeService;
 
-        public CourseController(ICourseService courseService)
+        public RecipeController(IRecipeService recipeService)
         {
-            _courseService = courseService;
+            _recipeService = recipeService;
         }
 
         public IActionResult Index()
         {
-            CourseViewModel model = _courseService.GetCourses();
+            RecipeViewModel model = _recipeService.GetRecipes();
 
             return View(model);
         }
