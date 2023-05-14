@@ -5,8 +5,8 @@ using System.Text;
 
 namespace CleanArch.Domain.Interfaces
 {
-    public interface ICourseRepository
+    public interface IRecipeRepository
     {
-        IEnumerable<Course> GetCourses();
+        IEnumerable<Recipe> GetRecipes();
     }
 }

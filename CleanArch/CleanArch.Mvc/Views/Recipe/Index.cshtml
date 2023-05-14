@@ -1,0 +1,13 @@
+﻿@model CleanArch.Application.ViewModels.RecipeViewModel
+
+<div class="container body-content">
+    <div class="row course-content">
+        @foreach (var recipe in Model.Recipes)
+        {
+            <div class="course-image-container">
+                <span>@recipe.Name</span>
+                <span>@recipe.URL</span>
+            </div>
+        }
+    </div>
+</div>

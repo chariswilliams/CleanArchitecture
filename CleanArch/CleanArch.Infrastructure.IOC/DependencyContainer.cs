@@ -14,10 +14,10 @@ namespace CleanArch.Infrastructure.IOC
         public static void RegisterServices(IServiceCollection services)
         {
             //Application Layer
-            services.AddScoped<ICourseService, CourseService>();
+            services.AddScoped<IRecipeService, RecipeService>();
 
             //Infrastructure.Data Layer
-            services.AddScoped<ICourseRepository, CourseRepository>();
+            services.AddScoped<IRecipeRepository, RecipesRepository>();
         }
 
     }
